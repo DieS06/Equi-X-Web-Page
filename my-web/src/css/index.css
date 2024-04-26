@@ -1,6 +1,12 @@
+/*Color Palette
+#d48e2b ---> Amarillo 
+#001d63 ---> Azul Marino*/
+/*----------------------------------------------*/
 body {
   margin: 0;
+  display: grid;
   font-family: "LTAmber-Regular";
+  grid-template-rows: 1fr auto;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url('../assets/images/RAW/BG.jpg');
@@ -15,3 +21,41 @@ section{
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
+main{
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+.sec-content {
+  grid-row: 1;
+}
+
+
+footer{
+  align-items: center;
+  background-color: #d48e2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-direction:column ;
+  min-height: 12vh;
+  width: 100%;
+  margin-top: auto;
+}
+.social-media img{
+  width: 3rem;
+  margin: 0.6rem;
+}
+ .copyright{
+  color: #001d63;
+  font-size: 1.2rem;
+  font-family: "LTAmber-Regular";
+ }
+
+  /*MEDIA QUERIES
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+  
+  }
+  
+  @media screen and (min-width: 390px) and (max-width: 767px) {
+    
+  }*/

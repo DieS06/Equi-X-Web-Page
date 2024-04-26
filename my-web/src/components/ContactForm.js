@@ -51,7 +51,7 @@ const ContactForm = () => {
       };
 
     return ( 
-        <section className="contact-form">
+        <section className="contact-form"  id='sec-contactForm'>
             <br />
             <form onSubmit={handleSubmit}>
                 <fieldset>

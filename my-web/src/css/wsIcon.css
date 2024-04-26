@@ -1,0 +1,38 @@
+/*Color Palette
+#d48e2b ---> Amarillo 
+#001d63 ---> Azul Marino*/
+/*----------------------------------------------*/
+.whatsapp-icon {
+    position: fixed;
+    bottom: 8rem;
+    left: 1rem; 
+    /*z-index: 100; /* Ensure it stays on top of other content */
+    /*background-color: #25D366; /* WhatsApp green */
+    color: #d48e2b;
+    padding: 1rem; /* Adjust padding as needed */
+    /*border-radius: 50%; /* Make it round */
+    cursor: pointer; /* Make it look clickable */
+    transition: all 0.3s ease; /* Add a smooth hover effect (optional) */
+    font-size: 3rem;
+  }
+  
+  .whatsapp-icon:hover {
+    transform: scale(1.5); /* Optional hover effect */
+  }
+
+  /*MEDIA QUERIES*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .whatsapp-icon{
+    font-size: 2.5rem;
+    bottom: 8rem;
+    left: 1rem; 
+  }
+}
+
+@media screen and (min-width: 390px)  and (max-width: 767px){
+  .whatsapp-icon{
+    font-size: 2rem;
+    bottom: 6rem;
+    left: -0.7rem; 
+  }
+}

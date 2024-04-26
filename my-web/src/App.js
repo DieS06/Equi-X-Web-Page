@@ -5,16 +5,18 @@ import Navbar from './components/Navbar';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import CVD from "./components/CVDownload";
+import WhatsAppIcon from './components/WhatsappChat';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <section className='sec-content'>
+      <main className='sec-content'>
         <CVD />
         <ContactForm />
-      </section>
-      <Footer/>
+      </main>
+      <Footer/> 
+      <WhatsAppIcon /> 
     </div>
   );
 }

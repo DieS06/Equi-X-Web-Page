@@ -32,7 +32,7 @@
         "send": "Enviar",
         "confirmation":{
             "title": "¡Gracias por contactarnos!",
-            "message": "Haz clic en el botón de confirmación para concluir el envío de mensaje.",
+            "message": "Haz clic en el botón de confirmación para concluir el envío del mensaje.",
             "confirm": "Confirmar",
             "cancel": "Cancelar"
         }

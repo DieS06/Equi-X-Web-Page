@@ -40,6 +40,7 @@ label{
   margin-bottom: 1rem; 
 }
 .form-group input{
+  color: white;
   background-color:rgba(43, 76, 152, 0.3);
   border: none;
   border-radius: 1rem;
@@ -56,12 +57,16 @@ label{
   font-family: "LTAmber-Regular";
   font-size: 1rem;
 }
+.form-group input:focus{
+  color: white;
+}
 #email{
   width: 85%;
   margin-bottom: 1rem;
 }
 
 .form-group textarea{
+  color:white;
   background-color:rgba(43, 76, 152, 0.3);
   border: none;
   border-radius: 1rem;
@@ -69,14 +74,17 @@ label{
   font-family: "LTAmber-Medium";
   font-size: 1rem;
   margin-bottom: 1.5rem;
-  width: 90%;
+  padding-top: 1rem;
+  padding-left: 2rem;
+  width: 85%;
 }
 .form-group textarea::placeholder{
   color: white;
   font-family: "LTAmber-Regular";
   font-size: 1rem;
-  padding-top: 1rem;
-  padding-left: 2rem;
+}
+.form-group textarea:focus{
+  color:white;
 }
 
 .send-btn{
@@ -112,7 +120,6 @@ label{
     padding: 3rem;
     width: 70%; 
   }
-
   .ReactModal__Overlay {
     align-items: center;
     background-color: #2b4c98;
@@ -124,7 +131,6 @@ label{
     background-blend-mode: multiply;
 
   }
-
   .modal-content .modal-title{
     color: #d48e2b;
     display:block;
@@ -133,7 +139,6 @@ label{
     letter-spacing: 0.25rem;
     text-align: center;
   }
-
   .modal-content p{
     color: white;
     display:block;
@@ -141,12 +146,10 @@ label{
     font-size: 1.5rem;
     text-align: center; 
   }
-
   .modal-content .btn-container {
     display: flex;
     justify-content: space-between;
   }
-
   .modal-content .btn-modal{
     color: white;
     border: none;
@@ -161,17 +164,14 @@ label{
     background-color:#d48e2b;
     color: #001d63;
   }
-  
   .modal-content .btn-modal.confirm:hover {
     background-color: #2ECC71;
     color: white;
   }
-  
   .modal-content .btn-modal.cancel { 
     background-color:#d48e2b;
     color: #001d63;
-  }
-  
+  } 
   .modal-content .btn-modal.cancel:hover {
     background-color: #c0392b;
     color: white;
@@ -179,9 +179,83 @@ label{
 
   /*MEDIA QUERIES*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-
+  .contact-form{
+    padding: 2rem;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  fieldset{
+    width: 75%;
+  }
+  legend{
+    width: 65%;
+  }
+  label{
+    font-size: 1rem;
+    padding-bottom: 1rem; 
+    padding-top: 0rem;
+    padding-left: 2rem;
+  }
+  .form-group input{
+    margin-right: 0.2rem;
+    padding-left: 1.5rem;
+  }
+  .form-group textarea{
+    padding-left: 0.8rem;
+  }
 }
-
 @media screen and (min-width: 390px) and (max-width: 767px) {
-  
+  .contact-form{
+    padding: 0rem;
+  }
+  form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  fieldset{
+    width: 70%;
+  }
+  legend{
+    width: 65%;
+    font-size: 2rem;
+  }
+  label{
+    font-size: 1rem;
+    padding-bottom: 1rem; 
+    padding-top: 0rem;
+    padding-left: 1rem;
+  }
+  .form-group{
+    margin-bottom:0.5rem;
+  }
+  .form-group input{
+    margin-right: 0.2rem;
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    width: 80%;
+  }
+  .form-group textarea{
+    padding-left: 0.8rem;
+    width: 80%;
+  }
+  .form-group #email {
+    width: 80%;
+  }
+  /*MODAL STYLE*/
+  .modal-content{
+    width: 50%;
+  }
+  .ReactModal__Overlay{
+    padding: 3rem;
+  }
+  .modal-content .modal-title{
+    font-size: 1.8rem;
+  }
+  .modal-content p{
+    font-size: 1rem;
+  }
 }

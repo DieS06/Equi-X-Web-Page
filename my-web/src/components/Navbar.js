@@ -1,5 +1,6 @@
 import LogoEquiX from '../assets/images/SVG/LogoEquiX.svg';
 import { useTranslation } from 'react-i18next';
+import useScrollToTarget from '../components/useScrollToTarget';
 import "../css/navbar.css";
 
 //Button states
@@ -9,6 +10,7 @@ const lngs = {
   }
 
 const Navbar = () => {
+    const handleScrollToContact = useScrollToTarget('sec-contactForm'); 
     //Declared for translation
     const [t, i18n] = useTranslation("global");
 
@@ -23,7 +25,7 @@ const Navbar = () => {
                         <a href="/Gallery" >{t("navBar.gallery")}</a>
                     </li>
                     <li>
-                        <a href="/Contact">{t("navBar.contact")}</a>
+                        <a href="/" onClick={handleScrollToContact}>{t("navBar.contact")}</a>
                     </li>
                     <li className='translate'>
                         {Object.keys(lngs).map((lng) => (
