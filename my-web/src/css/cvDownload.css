@@ -94,6 +94,7 @@
     .sec-cvdld{
         display: block;
         height: fit-content;
+        padding-top: 1rem;
     }
     .colOne-content{
         margin-bottom: 2rem;
