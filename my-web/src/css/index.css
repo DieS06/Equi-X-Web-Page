@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  font-family: "LTAmber-Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../assets/images/RAW/BG.jpg');
+  background-position: center;
+}
+
+code {
+  font-family: "LTAmber-Regular";
+}
+
+section{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

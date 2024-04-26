@@ -1,0 +1,8 @@
+.div-footer{
+    align-items: center;
+    display: flex;
+    background-color: #d48e2b;
+    height: 10rem;
+    justify-content: center;
+    width: 100%;
+}

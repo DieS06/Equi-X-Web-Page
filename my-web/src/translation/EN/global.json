@@ -1,0 +1,44 @@
+{
+    "navBar":{
+        "gallery": "Gallery",
+        "contact": "Contact",
+        "spanish": "Spanish",
+        "english": "English"
+    },
+    "AboutEquiX":{
+        
+    },
+    "Biography":{
+        
+    },
+    "Services":{
+        
+    },
+    "CVDownload":{
+        "title": "Hello, my name is Diego Sequeira, I'm a 3D Artist and a Software Engineer.",
+        "parragraph": "Get to know me a little bit more downloading my resume or reading my biography.",
+        "download": "Download",
+        "bio": "Biography"
+    },
+    "contactForm": {
+        "legend": "Contact Form",
+        "fullname": "Your fullname:",
+        "firstname": "Firstname",
+        "lastname": "Lastname",
+        "email": "Your email address:",
+        "emailExample": "example@example.com",
+        "message": "Your message:",
+        "writeHere": "Write here...",
+        "send": "Send",
+        "confirmation":{
+            "title": "Thanks for reaching us!",
+            "message": "Click the confirmation button to finish sending your message.",
+            "confirm": "Confirm",
+            "cancel": "Cancel"
+        }
+    },
+    "Footer":{
+        
+    }
+
+}

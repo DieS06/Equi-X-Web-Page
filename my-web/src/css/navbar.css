@@ -1,0 +1,159 @@
+/*Color Palette
+#d48e2b ---> Amarillo 
+#001d63 ---> Azul Marino*/
+/*---------------------------------------------------------------------*/
+/*NAV BAR*/
+  .navbar {
+    align-items: center;
+    background-color: #001d63 ;
+    box-shadow: 0px 4px 6px rgba(2, 20, 63, 0.5);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    height: 7rem;
+    justify-content: space-between;
+    margin: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+/*IMAGE LOGO EQUI-X*/
+  .navbar a img{
+    width: 11rem;
+    height: 8rem;
+    transition: transform 0.5s ease-out;
+    pointer-events: auto;
+  }
+  .navbar img:hover{
+    transform: scale(1.2);
+  }
+/*NAVBAR ANCHORS*/
+  .navbar .links {
+    margin-left: 2rem;
+    margin-right: 3rem;
+  }
+  .navbar .links ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;  
+  }
+  .navbar li {   
+    margin-left: 3rem;
+    padding: 0.6rem;
+    pointer-events: auto;
+  }
+  .navbar li a {
+    color: white;
+    font-family: "LTAmber-Regular";
+    font-size: 1.5rem;
+    flex: 1 6 1.5rem;
+    position: relative;
+    text-decoration: none;
+  }
+  .navbar li a:hover {
+    color: #d48e2b;
+  }
+/* Estilos base para todos los botones */
+.navbar li button{
+  background-color: #001d63;
+  border: 1px solid white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+  color: white;
+  cursor: pointer;
+  font-family: "LTAmber-Medium";
+  font-size: 1.2rem; 
+  padding: 0.8rem 1.2rem;
+  transition: background-color 0.3s, color 0.3s; 
+}
+/* Colores de los botones */
+.navbar li button.active {
+  background-color: white;
+  color: #001d63;
+}
+.navbar li button.rounded-left {
+  border-radius: 0 5px 5px 0; 
+}
+.navbar li button.rounded-right {
+  border-radius: 5px 0 0 5px; 
+}
+.navbar button:hover {
+  background-color: #d48e2b; 
+  border: 1px solid #d48e2b;
+}
+/* Cambio de color al hacer clic */
+.navbar li button[disabled] {
+  background-color: white; 
+  color:  #001d63; 
+  cursor: default;
+  border: 1px solid white;
+}
+.navbar li button[disabled]:hover {
+  background-color: #d48e2b;
+  border: 1px solid #d48e2b;
+}
+
+/*MEDIA QUERIES*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .navbar{
+    margin: 0 auto;
+    justify-content: flex-start;
+    height: 5rem;
+    flex-wrap: nowrap;
+    padding-top: 0.5rem;
+  }
+  .navbar a img{
+    width: 150px;
+    height: 15%;
+    margin-left: 2rem;
+    margin-top: 1rem;
+  }
+  .navbar .links li{
+    display: flex;
+  }
+  .navbar .links li a {
+    margin-left: 1.5rem;
+    width: 50px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 390px)  and (max-width: 767px){
+  .navbar{
+    margin: 0 auto;
+    justify-content: flex-start;
+    height: 2rem;
+    flex-wrap: nowrap;
+    padding-top: 0.5rem;
+  }
+  .navbar a img{
+    width: 80px;
+    height: 15%;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+  }
+  .navbar .links ul {
+    padding-left: 0;
+  }
+  .navbar .links li{
+    display: flex;
+    margin-top: 0.5rem;
+    margin-left: 1.2rem;
+  }
+  .navbar .links li a {
+    margin-left: 0.2rem;
+    width: 30px;
+    font-size: 12px;
+  }
+  /*EXTRA FOR PHONE FORMAT*/
+
+  .navbar li button{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+    height: 20px;
+    padding: 0.8rem 1rem;
+    margin: 0;
+    width: 10%;  
+  }
+}
