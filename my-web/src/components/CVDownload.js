@@ -5,14 +5,21 @@ import { useTranslation } from 'react-i18next';
 import "../css/cvDownload.css";
 
 const CVDownload = () => {
+    
+    const downloadCV = () => {
+        const pdfURL = '../assets/PDF/JuanDiegoSequeiraG_CV_Design&Programming.pdf';
+        const link = document.createElement('a');
+        link.href = pdfURL;
+        link.download = "JuanDiegoSequeiraG_CV_Design&Programming.pdf";
+        link.click();
+      };
     //Lottie Animation
     const animOpt = {
         loop: true,
         autoplay: true,
         animURL: "https://lottie.host/bbd55d61-dec7-460b-933e-fa570874a344/qjFdVXp8R6.json",
     };
-    //CV URL
-    const pdfURL = '../assets/PDF/JuanDiegoSequeiraG_CV_Design&Programming.pdf';
+
     //Declared for translation
     const [t] = useTranslation("global");
 
@@ -26,9 +33,9 @@ const CVDownload = () => {
                     {t("CVDownload.parragraph")}
                 </span>
                 <div className="cvdld-btns">
-                    <Link to={pdfURL} target="btn-download" download="JuanDiegoSequeiraG_CV_Design&Programming.pdf">
-                        <button className="btn-download">{t("CVDownload.download")}</button>
-                    </Link>
+                <button className="btn-download" onClick={downloadCV}>
+                    {t("CVDownload.download")}
+                </button>
                     <button className="btn-bio">{t("CVDownload.bio")}</button>
                 </div>
 
