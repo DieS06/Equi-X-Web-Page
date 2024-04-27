@@ -69,11 +69,8 @@
     border-radius: 6rem;
     margin-left: 3rem;
 }
-
-.lottie-anim{
-    display: flex;
-    align-self: center;
-    justify-content: center;
+.colTwo-content svg{
+    transform:none !important;
 }
 
   /*MEDIA QUERIES*/

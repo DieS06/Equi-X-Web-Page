@@ -15,8 +15,9 @@
         
     },
     "CVDownload":{
-        "title": "Hello, my name is Diego Sequeira, I'm a 3D Artist and a Software Engineer.",
-        "parragraph": "Get to know me a little bit more downloading my resume or reading my biography.",
+        "title": "Hello, my name is Diego Sequeira.",
+        "parragraph1": "I'm a 3D Artist and a Software Engineer.",
+        "parragraph2": "Get to know me a little bit more downloading my resume or reading my biography.",
         "download": "Download",
         "bio": "Biography"
     },

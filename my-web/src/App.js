@@ -5,7 +5,8 @@ import Navbar from './components/Navbar';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import CVD from "./components/CVDownload";
-import WhatsAppIcon from './components/WhatsappChat';
+import LinkIcons from './components/LinkIcons';
+/*import Skills from './components/Skills';*/
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <ContactForm />
       </main>
       <Footer/> 
-      <WhatsAppIcon /> 
+      <LinkIcons /> 
     </div>
   );
 }

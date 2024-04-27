@@ -1,26 +1,39 @@
-import React from 'react';
-import Lottie from 'react-lottie';
+import { useState, useRef }from 'react';
+import { Player } from '@lottiefiles/react-lottie-player';
 import { useTranslation } from 'react-i18next';
 import "../css/cvDownload.css";
 
 const CVDownload = () => {
     
     const downloadCV = () => {
+        //CV PDF DOWNLOAD
         const pdfURL = '../assets/PDF/JuanDiegoSequeiraG_CV_Design&Programming.pdf';
         const link = document.createElement('a');
         link.href = pdfURL;
         link.download = "JuanDiegoSequeiraG_CV_Design&Programming.pdf";
         link.click();
       };
-    //Lottie Animation
-    const animOpt = {
-        loop: true,
-        autoplay: true,
-        animURL: "https://lottie.host/bbd55d61-dec7-460b-933e-fa570874a344/qjFdVXp8R6.json",
-    };
+       //Declared for translation
+       const [t] = useTranslation("global");
+    
+        //Lottie Animation
+        const [isHovering, setIsHovering] = useState(false);
+        const playerRef = useRef(null);
 
-    //Declared for translation
-    const [t] = useTranslation("global");
+        const handleMouseOver = () => {
+            setIsHovering(true);
+            if (playerRef.current) {
+            playerRef.current.play();
+            }
+        };
+
+        const handleMouseLeave = () => {
+            setIsHovering(false);
+            if (playerRef.current) {
+            playerRef.current.stop();
+            }
+        };
+
 
     return ( 
         <section className="sec-cvdld">
@@ -29,7 +42,7 @@ const CVDownload = () => {
                     {t("CVDownload.title")}
                 </h1>
                 <span className="cvdld-text">
-                    {t("CVDownload.parragraph")}
+                    {t("CVDownload.parragraph2")}
                 </span>
                 <div className="cvdld-btns">
                 <button className="btn-download" onClick={downloadCV}>
@@ -39,8 +52,13 @@ const CVDownload = () => {
                 </div>
 
             </div>
-            <div className="colTwo-content">
-                <Lottie options={animOpt} height={350} width={350} />
+            <div className="colTwo-content" onMouseOver={handleMouseOver} onMouseLeave={handleMouseLeave}>
+                <Player 
+                ref={playerRef}
+                loop={false}
+                autoplay={true}
+                src="https://lottie.host/9d87c8a2-68eb-4134-a73c-25e3e59c5b83/3Hl67a4owT.json">        
+                </Player>
             </div>
         </section>
      );

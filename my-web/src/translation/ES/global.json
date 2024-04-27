@@ -15,8 +15,9 @@
         
     },
     "CVDownload":{
-        "title": "Hola, mi nombre es Diego Sequeira, soy Artista 3D e Ingeniero de Software.",
-        "parragraph": "Para conocerme un poco más y conocer mi perfil laboral puedes descargar mi curriculum vitae o leer mi biografía.",
+        "title": "Hola, mi nombre es Diego Sequeira.",
+        "parragraph1": "Soy Artista 3D e Ingeniero de Software.",
+        "parragraph2": "Para conocerme un poco más y conocer mi perfil laboral puedes descargar mi curriculum vitae o leer mi biografía.",
         "download": "Descargar",
         "bio": "Biografía"
     },

@@ -2,22 +2,48 @@
 #d48e2b ---> Amarillo 
 #001d63 ---> Azul Marino*/
 /*----------------------------------------------*/
-.whatsapp-icon {
+/*WHATSAPP ICON*/
+.sec-icons {
     position: fixed;
-    bottom: 10rem;
-    left: 1rem; 
-    /*z-index: 100; /* Ensure it stays on top of other content */
-    /*background-color: #25D366; /* WhatsApp green */
-    color: #d48e2b;
-    padding: 1rem; /* Adjust padding as needed */
-    /*border-radius: 50%; /* Make it round */
-    cursor: pointer; /* Make it look clickable */
-    transition: all 0.3s ease; /* Add a smooth hover effect (optional) */
-    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    bottom: 1rem;
   }
-  
-  .whatsapp-icon:hover {
-    transform: scale(1.5); /* Optional hover effect */
+  .side-icons{
+    height: 23rem;
+    width: 5rem;
+    justify-content: flex-start;
+  }
+  .scroll-top-button svg{
+    fill:  #d48e2b;
+  }
+  .scroll-top-button svg:hover{
+    fill:  #001d63;
+  }
+  .scroll-to-top{
+    background-color:  #001d63 !important;
+    box-shadow: 0 0 1rem 0.3rem rgba(212, 142, 43, 0.5) !important;
+    bottom: 0.5rem !important;
+  }
+  .scroll-to-top:hover{
+    transform: scale(1.2);
+    transition: transform 0.2s ease-in-out;
+    background-color:  white !important;
+  }
+  .side-icons a img{
+    width: 3rem;
+    height: 3rem;
+    transition: 0.3s ease;
+    padding: 0.5rem;
+  }
+  .side-icons a img:hover{
+    transform: scale(1.5);
+    transition: transform 0.3s ease-in-out;
+  }
+  .whatsapp-icon{
+    color: #d48e2b;
+    font-size: 2.5rem;
+    transition: 0.3s ease-in-out;
   }
 
   /*MEDIA QUERIES*/
@@ -30,8 +56,20 @@
 }
 
 @media screen and (min-width: 390px)  and (max-width: 767px){
+  .sec-icons{
+    width: 50px;
+    height: 300px;
+    bottom: 0.1rem;
+  }
+  .side-icons{
+    width: 50px;
+  }
+  .side-icons a img{
+    width: 2rem;
+    height: 2rem;
+  }
   .whatsapp-icon{
-    font-size: 2rem;
+    font-size: 1.5rem;
     bottom: 8rem;
     left: -0.7rem; 
   }
