@@ -6,7 +6,9 @@ import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 import CVD from "./components/CVDownload";
 import LinkIcons from './components/LinkIcons';
-/*import Skills from './components/Skills';*/
+/*import Skills from './components/Skills';
+import AboutX from './components/AboutEquiX';
+*/
 
 function App() {
   return (
