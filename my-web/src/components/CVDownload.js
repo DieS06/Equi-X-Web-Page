@@ -1,6 +1,5 @@
 import React from 'react';
 import Lottie from 'react-lottie';
-import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import "../css/cvDownload.css";
 
