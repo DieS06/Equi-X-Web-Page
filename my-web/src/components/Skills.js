@@ -1,5 +1,9 @@
 const Skills = () => {
-    return (  );
+    return ( 
+        <section>
+            
+        </section>
+     );
 }
  
 export default Skills;
