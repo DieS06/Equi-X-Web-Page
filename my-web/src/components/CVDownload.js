@@ -1,4 +1,4 @@
-import { useState, useRef }from 'react';
+import { useRef }from 'react';
 import { Player } from '@lottiefiles/react-lottie-player';
 import { useTranslation } from 'react-i18next';
 import "../css/cvDownload.css";
@@ -17,18 +17,15 @@ const CVDownload = () => {
        const [t] = useTranslation("global");
     
         //Lottie Animation
-        const [isHovering, setIsHovering] = useState(false);
         const playerRef = useRef(null);
 
         const handleMouseOver = () => {
-            setIsHovering(true);
             if (playerRef.current) {
             playerRef.current.play();
             }
         };
 
         const handleMouseLeave = () => {
-            setIsHovering(false);
             if (playerRef.current) {
             playerRef.current.stop();
             }
