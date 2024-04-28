@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Player } from '@lottiefiles/react-lottie-player';
 import Modal from 'react-modal';
 import "../css/contactForm.css";
 
@@ -124,10 +125,19 @@ const ContactForm = () => {
                 
             </form>
             <br />
-            <Modal className="ReactModal__Overlay" isOpen={isModalOpen} onRequestClose={() => setIsModalOpen(false)}>
+            <Modal className="ReactModal__Overlay" 
+            isOpen={isModalOpen} onRequestClose={() => 
+            setIsModalOpen(false)}>
                 <div className='modal-content'>
                   <h2 className='modal-title'>{t('contactForm.confirmation.title')}</h2>
+                  <Player 
+                    loop
+                    autoplay
+                    speed={2.5}
+                    src="https://lottie.host/2205565c-7ba8-4309-b68e-40502d924179/GqVrcaLvW7.json">        
+                  </Player>
                   <p className='modal-p'>{t('contactForm.confirmation.message')}</p>
+                  
                   <div className="btn-container">
                     <button className='btn-modal confirm' onClick={() => {
                     setIsModalOpen(false);
